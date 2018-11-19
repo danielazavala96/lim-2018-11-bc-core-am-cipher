@@ -1,0 +1,16 @@
+body{
+
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-image:url(https://static.vecteezy.com/system/resources/previews/000/222/640/original/christmas-background-with-baubles-and-gifts-vector.jpg);
+    background-size: cover;
+    background-attachment:fixed;
+    margin: 0;
+    padding: 0;
+}
+#creador {
+  display : none;
+}

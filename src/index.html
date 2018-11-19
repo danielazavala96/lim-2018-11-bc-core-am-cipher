@@ -6,9 +6,42 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div id="root">
     <h1>Amigx super secreto</h1>
-    <p>Hola! Sabemos que en estas fiestas navideñas es usual jugar al amigo secreto, asi que hemos creado la fórmula perfecta que complementara tu juego, esto lo hará aún mas secreto sh... </p>
-    <div id="root"></div>
+    <p>Hola! Sabemos que en estas fiestas navideñas es usual jugar al amigo secreto, asi que hemos creado la fórmula perfecta que complementara tu juego, esto lo hará aún mas secreto shhh... </p>
+    </div>
+    <section id="inicio">
+    <button 
+    id="crear" type="submit">Crear mensaje</button>
+    <button
+    id="descubrir" type="submit">Descubrir mensaje</button>
+    </section>
+    <br/>
+    <br/>
+    <br/>
+    <section id="creador">
+  <div class="speech">Ingresa lo que quieres decir y copia el mensaje secreto</div>
+  <div class="input">
+    <form id="form">
+      Elige tu código:
+      <input type="number" value="" id="offset"/>
+      <br/>
+      <br/>
+      <br/>
+      ¿Qué quieres decirle?
+      <input type="text" id="cifrar"/>
+      Mensaje secreto:
+      <input type="text" id="finish"/>
+    </section>
+
+      <br/>
+      <br/>
+      <br/>
+
+    </form>
+  </div>
+</div>
+
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
