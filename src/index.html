@@ -4,44 +4,46 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+    <section>
   </head>
   <body>
     <div id="root">
     <h1>Amigx super secreto</h1>
     <p>Hola! Sabemos que en estas fiestas navideñas es usual jugar al amigo secreto, asi que hemos creado la fórmula perfecta que complementara tu juego, esto lo hará aún mas secreto shhh... </p>
+<button id="emisor" type=button> Crea </button>
+<button id="receptor" type=button> Descubre </button>
     </div>
-    <section id="inicio">
-    <button
-    id="crear" type="submit">Crear mensaje</button>
-    <button
-    id="descubrir" type="submit">Descubrir mensaje</button>
-    </section>
-    <br/>
-    <br/>
-    <br/>
-    <section id="creador">
-  <div class="speech">Ingresa lo que quieres decir y copia el mensaje secreto</div>
-  <div class="input">
-    <form id="form">
+    <div id="creador">
       <label for="offset">Elige tu código:</label>
       <input type="number" id="offset"/>
       <br/>
       <br/>
-      <br/>
-      ¿Qué quieres decirle?
-      <input type="text" id="textcipher"/>
-      Mensaje secreto:
-      <input type="text" id="resultcipher"/>
-      <button id="btnEnviar_1" type=button> cifrar </button>
-    </section>
-
-      <br/>
-      <br/>
-      <br/>
-
-    </form>
-  </div>
+        <br/>
+        <label for="">¿Qué quieres decirle?</label>
+        <input type="text" id="textcipher"/>
+        <button id="btnEnviar_1" type=button> Cifrar </button>
+        <label for="">Mensaje secreto:</label>
+        <input type="text" id="resultcipher" value=""/>
+        <button id="back1" type=button> Volver </button>
+  <br/>
+  <br/>
+  <br/>
 </div>
+<div id="invitado">
+<label for="offset">Elige tu código:</label>
+  <input type="number" id="offset1"/>
+  <br/>
+  <br/>
+  <br/>
+  <label for="">¿Qué te dijeron?</label>
+  <input type="text" id="textcipher_1"/>
+  <button id="btnEnviar_2" type=button> Descifrar </button>
+  <label for="">Mensaje revelado:</label>
+  <input type="text" id="resultcipher_1" value=""/>
+  <button id="borrar" type="reset" class="button"> Limpiar </button>
+  <button id="back2" type=button> Volver </button>
+</div>
+</section>
 
     <script src="cipher.js"></script>
     <script src="index.js"></script>
