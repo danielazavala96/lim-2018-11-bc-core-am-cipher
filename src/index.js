@@ -15,6 +15,13 @@ const inicioPantalla = () => {
 }
 inicioPantalla();
 
+let botonclean1 = document.getElementById("borrar1")
+let borrarCampo1 = document.getElementById("resultcipher")
+function cleanField1(){
+    borrarCampo1.value = "";
+}
+botonclean1.addEventListener("click", cleanField1);
+
 const botonCrea = document.getElementById("emisor");
 const pantallaNumb1 = () => {
   document.getElementById("creador").style.display = "block";
@@ -31,6 +38,14 @@ const volverInicio1 = () => {
 }
 botonBack.addEventListener("click",volverInicio1);
 
+let botonclean = document.getElementById("borrar")
+let borrarCampo = document.getElementById("resultcipher_1")
+function cleanField(){
+    borrarCampo.value = "";
+}
+
+botonclean.addEventListener("click", cleanField);
+
 const botonDescubre = document.getElementById("receptor")
 const pantallaNumb2 = () => {
   document.getElementById("invitado").style.display = "block";
@@ -46,10 +61,3 @@ const volverInicio2 = () => {
   document.getElementById("creador").style.display = "none";
 }
 botonBack2.addEventListener("click",volverInicio2);
-
-//let botonclean = document.getElementById("borrar")
-//let borrarCampo = document.getElementById("resultcipher_1")
-//function cleanField(){
-//    borrarCampo.value = "";
-//}
-//botonclean.addEventListener("click", cleanField);
