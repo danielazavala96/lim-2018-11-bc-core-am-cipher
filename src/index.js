@@ -17,8 +17,12 @@ inicioPantalla();
 
 let botonclean1 = document.getElementById("borrar1")
 let borrarCampo1 = document.getElementById("resultcipher")
+let borrarCampoInicial = document.getElementById("textcipher")
+let borrarOffset1 = document.getElementById("offset")
 function cleanField1(){
     borrarCampo1.value = "";
+    borrarCampoInicial.value = "";
+    borrarOffset1.value = "";
 }
 botonclean1.addEventListener("click", cleanField1);
 
@@ -40,8 +44,12 @@ botonBack.addEventListener("click",volverInicio1);
 
 let botonclean = document.getElementById("borrar")
 let borrarCampo = document.getElementById("resultcipher_1")
+let limpiarTexto = document.getElementById("textcipher_1")
+let limpiarOffset = document.getElementById("offset1")
 function cleanField(){
     borrarCampo.value = "";
+    limpiarTexto.value = "";
+    limpiarOffset.value = "";
 }
 
 botonclean.addEventListener("click", cleanField);
