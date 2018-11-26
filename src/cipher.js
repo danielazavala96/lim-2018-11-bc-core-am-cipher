@@ -6,11 +6,12 @@ const inputOffset = document.getElementById("offset");
 const textoResult = document.getElementById("resultcipher");
 const buttonCipher = document.getElementById("btnEnviar_1");
 
-const cifrado = (textoInicial, offset) => {
+const cifrado = (textoInicial, offset_uno) => {
   let textoFinal = "";
+  const neoOffset = offset_uno%26;
   const textoMayus = textoInicial.toUpperCase();
   for(var i=0; i<textoMayus.length; i++){
-    textoFinal+= String.fromCharCode((textoMayus.charCodeAt(i)-65+offset)%26+65);
+    textoFinal+= String.fromCharCode((textoMayus.charCodeAt(i)-65+neoOffset)%26+65);
   }
   return textoFinal;
 
