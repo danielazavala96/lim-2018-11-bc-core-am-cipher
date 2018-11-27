@@ -15,6 +15,18 @@ const inicioPantalla = () => {
 }
 inicioPantalla();
 
+const inputTextoInicial = document.getElementById("textcipher");
+const inputOffset = document.getElementById("offset");
+const textoResult = document.getElementById("resultcipher");
+const buttonCipher = document.getElementById("btnEnviar_1");
+
+buttonCipher.addEventListener("click", function(){
+  let offset = parseInt(inputOffset.value);
+  let textoInicial = inputTextoInicial.value;
+  textoResult.value = encode(textoInicial, offset);
+  console.log(encode(textoInicial, offset));
+})
+
 let botonclean1 = document.getElementById("borrar1")
 let borrarCampo1 = document.getElementById("resultcipher")
 let borrarCampoInicial = document.getElementById("textcipher")
@@ -41,6 +53,18 @@ const volverInicio1 = () => {
   document.getElementById("invitado").style.display = "none";
 }
 botonBack.addEventListener("click",volverInicio1);
+
+const inputTextoInicial2 = document.getElementById("textcipher_1");
+const inputOffset2 = document.getElementById("offset1");
+const textoResult2 = document.getElementById("resultcipher_1");
+const buttonCipher2 = document.getElementById("btnEnviar_2");
+
+buttonCipher2.addEventListener("click", function(){
+  let offset1 = parseInt(inputOffset2.value);
+  let textoInicial2 = inputTextoInicial2.value;
+  textoResult2.value = decode(textoInicial2, offset1);
+  console.log(decode(textoInicial2, offset1));
+})
 
 let botonclean = document.getElementById("borrar")
 let borrarCampo = document.getElementById("resultcipher_1")
