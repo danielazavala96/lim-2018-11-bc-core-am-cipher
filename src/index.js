@@ -23,8 +23,8 @@ const buttonCipher = document.getElementById("btnEnviar_1");
 buttonCipher.addEventListener("click", function(){
   let offset = parseInt(inputOffset.value);
   let textoInicial = inputTextoInicial.value;
-  textoResult.value = encode(textoInicial, offset);
-  console.log(encode(textoInicial, offset));
+  textoResult.value = window.cipher.encode(textoInicial, offset);
+  //console.log(window.cipher.encode(textoInicial, offset));
 })
 
 let botonclean1 = document.getElementById("borrar1")
@@ -62,8 +62,8 @@ const buttonCipher2 = document.getElementById("btnEnviar_2");
 buttonCipher2.addEventListener("click", function(){
   let offset1 = parseInt(inputOffset2.value);
   let textoInicial2 = inputTextoInicial2.value;
-  textoResult2.value = decode(textoInicial2, offset1);
-  console.log(decode(textoInicial2, offset1));
+  textoResult2.value = window.cipher.decode(textoInicial2, offset1);
+  //console.log(window.cipher.decode(textoInicial2, offset1));
 })
 
 let botonclean = document.getElementById("borrar")
