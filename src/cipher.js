@@ -19,7 +19,7 @@ const decode = (textoInicial2, offset1) => {
   const texto_Mayus = textoInicial2.toUpperCase();
   for(var i=0; i<texto_Mayus.length; i++){
     if( texto_Mayus [i]==" "){
-      textoFinal2 +=" ";
+    textoFinal2 +=" ";
     }
     else{
     textoFinal2+= String.fromCharCode((texto_Mayus.charCodeAt(i)+65-newoffset1)%26+65);
