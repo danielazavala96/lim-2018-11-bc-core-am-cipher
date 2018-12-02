@@ -15,7 +15,7 @@ body{
   padding: 1em 2em;
   height: 120px;
 }
-#root {
+#root, #root_1, #root_2 {
   margin: 50px 0 50px 0;
 }
 
@@ -24,7 +24,7 @@ body{
   margin-bottom: 10px;
 }*/
 
-#form-div {
+#form-div, #creador, #invitado {
     background-color:rgba(72,72,72,0.4);
     border-radius: 20px;
     left: 47%;
@@ -55,6 +55,7 @@ body{
 
 #emisor {
    background: red;
+   color: white;
     width: 180px;
     padding: 4px 0;
     margin-top:50px;
@@ -63,7 +64,7 @@ body{
     border-radius: 10px;
 }
 
-#offset {
+#offset, #offset1 {
   width: 50px;
   box-sizing: border-box;
   border: 2px solid red;
@@ -84,7 +85,8 @@ textarea {
 
 
 #receptor {
-   background-color: #15b06c;
+   background-color: rgb(0, 164, 30);
+   color: white;
    width: 180px;
    padding: 4px 0;
    margin-top:50px;
@@ -93,14 +95,15 @@ textarea {
 
    border-radius: 10px;
 }
-#creador, #invitado {
+/*#creador, #invitado {
   background-color:rgba(72,72,72,0.4);
   border-radius: 20px;
   left: 47%;
+  height: auto;
   margin: auto;
   padding: 1em 1em;
   width: 500px;
-}
+}*/
 .footer {
    /*position: fixed;*/
    height: 20px;
