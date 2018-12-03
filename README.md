@@ -1,6 +1,6 @@
-# Cifrado César
+# Amigo súper secreto
 
-Cifrar significa codificar. El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher) es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio César lo usaba para enviar órdenes secretas a sus generales en los campos de batalla.
+Sorteo Amigo Secreto. El sorteo de [Amigo secreto] (https://www.sorteoamigosecreto.com/) es un juego para la Navidad. Se trata de asignar al azar un amigo a cada uno de los participantes. Cada uno de los participantes entonces tiene que hacer una carta a su amigo secreto, y a la vez, recibirá un carta de alguien que no sabe quién es. En esta oportunidad hemos reinventado al Amigo secreto por Amigx súper secreto, un formato digital del juego.
 
 ![caeser-cipher](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/2000px-Caesar3.svg.png)
 
@@ -219,7 +219,7 @@ para ver la descripción detallada de cada _habilidad_ y cada _nivel_. Esta es u
    también). Si usas Windows puedes usar [Git bash](https://git-scm.com/download/win),
    aunque recomendaría que consideres probar :penguin: GNU/Linux.
 3. Haz tu propio :fork_and_knife: [fork](https://help.github.com/articles/fork-a-repo/)
-   del repo de tu cohort, tus _coaches_ te compartirán un _link_ a un repo y te 
+   del repo de tu cohort, tus _coaches_ te compartirán un _link_ a un repo y te
    darán acceso de lectura en ese repo.
 4. :arrow_down: [Clona](https://help.github.com/articles/cloning-a-repository/)
    tu _fork_ a tu computadora (copia local).
