@@ -15,25 +15,25 @@ const inicioPantalla = () => {
 }
 inicioPantalla();
 
-const inputTextoInicial = document.getElementById("textcipher");
+const inputCreatorText = document.getElementById("textcipher");
 const inputOffset = document.getElementById("offset");
 const textoResult = document.getElementById("resultcipher");
 const buttonCipher = document.getElementById("btnEnviar_1");
 
 buttonCipher.addEventListener("click", function(){
   let offset = parseInt(inputOffset.value);
-  let textoInicial = inputTextoInicial.value;
-  textoResult.value = window.cipher.encode(textoInicial, offset);
+  let creatorText = inputCreatorText.value;
+  textoResult.value = window.cipher.encode(creatorText, offset);
   //console.log(window.cipher.encode(textoInicial, offset));
 })
 
 let botonclean1 = document.getElementById("borrar1")
 let borrarCampo1 = document.getElementById("resultcipher")
-let borrarCampoInicial = document.getElementById("textcipher")
+let borrarCreatorText = document.getElementById("textcipher")
 let borrarOffset1 = document.getElementById("offset")
 function cleanField1(){
     borrarCampo1.value = "";
-    borrarCampoInicial.value = "";
+    borrarCreatorText.value = "";
     borrarOffset1.value = "";
 }
 botonclean1.addEventListener("click", cleanField1);
@@ -54,15 +54,15 @@ const volverInicio1 = () => {
 }
 botonBack.addEventListener("click",volverInicio1);
 
-const inputTextoInicial2 = document.getElementById("textcipher_1");
+const areaDiscoverText = document.getElementById("textcipher_1");
 const inputOffset2 = document.getElementById("offset1");
 const textoResult2 = document.getElementById("resultcipher_1");
 const buttonCipher2 = document.getElementById("btnEnviar_2");
 
 buttonCipher2.addEventListener("click", function(){
   let offset1 = parseInt(inputOffset2.value);
-  let textoInicial2 = inputTextoInicial2.value;
-  textoResult2.value = window.cipher.decode(textoInicial2, offset1);
+  let discoverText = areaDiscoverText.value;
+  textoResult2.value = window.cipher.decode(discoverText, offset1);
   //console.log(window.cipher.decode(textoInicial2, offset1));
 })
 
