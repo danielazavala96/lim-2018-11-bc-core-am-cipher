@@ -1,53 +1,47 @@
 # Amigo súper secreto
 
-Sorteo Amigo Secreto. El sorteo de [Amigo secreto] (https://www.sorteoamigosecreto.com/) es un juego para la Navidad. Se trata de asignar al azar un amigo a cada uno de los participantes. Cada uno de los participantes entonces tiene que hacer una carta a su amigo secreto, y a la vez, recibirá un carta de alguien que no sabe quién es. En esta oportunidad hemos reinventado al Amigo secreto por Amigx súper secreto, un formato digital del juego.
+Sorteo Amigo Secreto. El sorteo de [Amigo secreto](https://www.sorteoamigosecreto.com) es un juego para la Navidad. Se trata de asignar al azar un amigo a cada uno de los participantes. Cada uno de los participantes entonces tiene que hacer una carta a su amigo secreto, y a la vez, recibirá un carta de alguien que no sabe quién es. En esta oportunidad hemos reinventado al Amigo secreto por Amigx súper secreto, un formato digital del juego.
 
-![caeser-cipher](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/2000px-Caesar3.svg.png)
+![Web](imágenes/web1.png)
 
+## ¿A quiénes esta dirijido? - Usuarios
+Amigo súper secreto es un sitio web de entretenimiento, dirijido a quienes embargados por los sentimiento de visperas de navidad promueven juegos de confraternidad. Comunmente se jugaba al Amigo secreto en colegios, universidades, centros de trabajos y otros grupos sociales, pero vamos... ¿Aún se escriben cartas en estos tiempos? Esto nos lleva a querer innovar el juego enfocados en la evolución del comportamiento de los usuarios, algunas caracteristicas puntuales son: tecnologia, inmediatez, practicidad.
+
+![friends](imágenes/intercambioderegalo.jpg)
+
+## ¿Qué buscan? - Objetivos
+La esencia de este juego es mantener el secreto de quién es la persona que redacta el mensaje, probablemente una caligrafía facilmente nos ayudaria a detectar quién es el redactor de una carta, y justamente eso es lo que no sucedera en _Amigx super secreto_. Aquí quien emite el mensaje no se verá expuesto a que alguien externo a la pareja con la que realmente le toca jugar pueda entender lo que dice su mensaje a simple vista, esto con el fin de evitar cualquier situación que eche a perder el secretismo que caracteriza a este juego.  También hemos detectado que el usuario espera formar parte de este juego sin que este interfiera con sus obligaciones cotidianas al mismo tiempo.
+
+## ¿Qué ofrecemos? - Solución
+_Amigx súper secreto_ resuelve de manera sencilla cómo no dejarnos absorber por la rutina y poder participar en un juego tradicional, y al mismo tiempo ofrece otras herramientas que haran que el juego se mantenga vigente durante unos años más. El juego le permite al usuario imprimir el mensaje cifrado o enviarlo a través de la dirección del sitio, hola@amigxsecreto.com, para que no pierda el sentido de ser anónimo. Además consideramos importante para la secuencia del juego, que el usuario encontrara una dinámica muy similar a la que ya conoce, con la única diferencia de presentarse en un nuevo formato (digital).
+
+Funcionalidad:
 El cifrado césar es una de las técnicas más simples para cifrar un mensaje. Es un tipo de cifrado por sustitución, es decir que cada letra del texto original es reemplazada por otra que se encuentra un número fijo de posiciones (desplazamiento) más adelante en el mismo alfabeto.
 
-Por ejemplo, si usamos un desplazamiento (_offset_) de 3 posiciones:
+Por ejemplo, si usamos un desplazamiento (offset) de 33 posiciones:
 
-- La letra A se cifra como D.
-- La palabra CASA se cifra como FDVD.
-- Alfabeto sin cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-- Alfabeto cifrado: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
+La letra A se cifra como H.
+La palabra CASA se cifra como JHZH.
+Alfabeto sin cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+Alfabeto cifrado: H I J K L M N O P Q R S T U V W X Y Z A B C D E F G
 
-En la actualidad, todos los cifrados de sustitución simple se descifran con mucha facilidad y, aunque en la práctica no ofrecen mucha seguridad en la comunicación por sí mismos; el cifrado César sí puede formar parte de sistemas más complejos de codificación, como el cifrado Vigenère, e incluso tiene aplicación en el sistema ROT13.
+Diseño:
+El diseño corresponde a la temática navideña ya que el juego en el que se ha basado la experiencia se conoce por ponerse en práctica tradicionalmente en estas fechas.
 
-## Resumen del proyecto
+- Los colores que predominan son:
+  color verde: rgb(0, 164, 30)
+  color rojo: rgb(227, 17, 17)
 
-¿Qué tengo que hacer exactamente? En este proyecto crearás la primera aplicación web del _bootcamp_. Servirá para que el usuario pueda cifrar y descifrar un texto indicando un desplazamiento específico de caracteres (_offset_).
-
-La temática es libre. Tú debes pensar en qué situaciones de la vida real se necesitaría cifrar un mensaje y pensar en cómo debe ser esa experiencia de uso (qué pantallas, explicaciones, mensajes, colores, ¿marca?) etc. Algunas ideas de ejemplo:
-
-- Crear claves seguras para el email.
-- Encriptar/cifrar una tarjeta de crédito.
-- Herramienta de mensajería interna de una organización de derechos humanos en una zona de conflicto.
-- Mensajería secreta para parejas.
+- Fuentes utilizadas:
+  Indie Flower
+  ![indie flower](imágenes/indieflower.png)
+  Mountains of Christmas
+  ![christmas](imágenes/christmas.png)  
 
 
-## Consideraciones generales
+Para el sitio web se consideraron tres pantallas: inicio, amigo secreto 1 (envia) y amigo secreto 2 (recibe), Según lo prototipado y testeo de experiencia de usuario en el sitio, esta distribución del contenido le permitia sentirse mejor orientado en cuanto a qué acción realizar en cada pantalla.
 
-- Este proyecto se debe resolver de manera individual.
-- El proyecto será entregado subiendo tu código a GitHub (commit/push) y la interfaz será desplegada usando GitHub pages. Si no sabes lo que es GitHub, no te preocupes, lo aprenderás durante este proyecto.
-- Tiempo para completarlo: Toma como referencia 2 semanas. Trabaja durante el primer Sprint (una semana) y al  final, trata de fijar un estimado de cuándo lo terminarás.
 
-## Objetivos de aprendizaje
-
-En este proyecto aprenderás a construir una aplicación web que interactúe con el usuario a través del navegador y la lógica basada en esa interacción. Dicho en palabras sencillas, aprenderás a:
-
-- Pintar elementos de formulario en la pantalla usando **HTML** y **CSS**.
-- Permitir al usuario interactuar (**eventos del DOM**) y hacer algo cuando ocurran dichos eventos (cifrar/descifrar).
-- Manipular _**strings**_ (cadenas de texto).
-- Usar **control de flujo** (bucles, condicionales, ...).
-- Actualizar la pantalla con los resultados (**manipular el DOM**).
-- **Implementar funciones** dada una descripción de su comportamiento.
-- Verificar tu implementación con **pruebas unitarias**.
-- Entender las **necesidades del usuario** y cómo proponer una solución.
-- Organizar tu tiempo y priorizar tareas en un entorno de **alta incertidumbre**.
-
-## Parte Obligatoria
 
 Usa este alfabeto simple (solamente mayúsculas y sin ñ):
 
