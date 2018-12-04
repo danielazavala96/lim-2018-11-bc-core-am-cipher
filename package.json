@@ -1,4 +1,4 @@
-{
+  {
   "name": "cipher",
   "version": "1.0.0",
   "main": "src/index.html",
@@ -7,7 +7,7 @@
     "htmlhint": "htmlhint src/*.html test/*.html",
     "eslint": "eslint --ext .js src/ test/",
     "pretest": "npm run eslint && npm run htmlhint",
-    " -browser": "opener ./test/index.html",
+    "test-browser": "opener ./test/index.html",
     "test-node": "nyc mocha ./test/headless.js",
     "test": "npm run test-node && npm run test-browser"
   },

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
-  <meta charset="utf-8">
+<html lang="es">
   <head>
+    <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header class="encabezado">
@@ -14,12 +14,12 @@
     <section class="contenido">
       <div id="root">
         <div id="form-div">
-          <p>¡Felices fiestas navideñas! Sabemos que en estas fechas es usual jugar al amigo secreto, asi que hemos creado la fórmula perfecta que complementara tu juego, esto lo hará aún mas secreto shhh... </p>
-          <p align="left"> 1. Si ya inciaron con el sorteo de amigxs secretos ¡comencemos! Si aún no lo hacen ingresa aquí antes www.sorteoamigosecreto.com
+          <p class="bienvenida">¡Felices fiestas navideñas! Sabemos que en estas fechas es usual jugar al amigo secreto, asi que hemos creado la fórmula perfecta que complementara tu juego, esto lo hará aún mas secreto shhh... </p>
+          <p> 1. Si ya inciaron con el sorteo de amigxs secretos ¡comencemos! Si aún no lo hacen ingresa aquí antes www.sorteoamigosecreto.com
           </p>
-          <p align="left"> 2. Ahora, elige cear un mensaje secreto o descubrir uno.
+          <p> 2. Ahora, elige cear un mensaje secreto o descubrir uno.
           </p>
-          <p align="left"> 3. Si estás listo ¡Comencemos!
+          <p> 3. Si estás listo ¡Comencemos!
           </p>
           <button id="emisor" type="button"> Crea </button>
           <button id="receptor" type="button"> Descubre </button>
@@ -32,7 +32,7 @@
                   <br/>
                   <br/>
                   <br/>
-                <textarea class="text" id="textcipher"/>¿Qué quieres decirle?</textarea>
+                <textarea class="text" id="textcipher">¿Qué quieres decirle?</textarea>
                   <p>
                     <button id="btnEnviar_1" type="button"> Cifrar </button>
                   </p>
@@ -53,11 +53,11 @@
                   <br/>
                   <br/>
                   <br/>
-                <textarea class="text" id="textcipher_1"/>¿Qué te dijeron?</textarea>
+                <textarea class="text" id="textcipher_1">¿Qué te dijeron?</textarea>
                   <p>
                    <button id="btnEnviar_2" type="button"> Descifrar </button>
                   </p>
-                <textarea class="text" id="resultcipher_1" value=""/>Mensaje revelado:</textarea>
+                <textarea class="text" id="resultcipher_1">Mensaje revelado:</textarea>
                   <p>
                     <button id="borrar" type="reset" class="button"> Limpiar </button>
                     <button id="back2" type="button"> Volver </button>

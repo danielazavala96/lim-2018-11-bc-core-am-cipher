@@ -1,28 +1,28 @@
-const encode = (creatorText, offset) => {
+const encode = (offset_uno, textoInicial) => {
   let textoFinal = "";
-  const new-offset = offset%26;
-  const textoMayus = creatorText.toUpperCase();
+  const neoOffset = offset_uno%26;
+  const textoMayus = textoInicial.toUpperCase();
   for(var i=0; i<textoMayus.length; i++){
     if( textoMayus [i]==" "){
     textoFinal +=" ";
   }
   else{
-    textoFinal+= String.fromCharCode((textoMayus.charCodeAt(i)-65+new-offset)%26+65);
+    textoFinal+= String.fromCharCode((textoMayus.charCodeAt(i)-65+neoOffset)%26+65);
   }}
   return textoFinal;
 
 }
 
-const decode = (discoverText, offset1) => {
+const decode = (offset1, textoInicial2) => {
   let textoFinal2 = "";
-  const new-offset2 = offset1%26;
-  const texto_Mayus = discoverText.toUpperCase();
+  const newoffset1 = offset1%26;
+  const texto_Mayus = textoInicial2.toUpperCase();
   for(var i=0; i<texto_Mayus.length; i++){
     if( texto_Mayus [i]==" "){
     textoFinal2 +=" ";
     }
     else{
-    textoFinal2+= String.fromCharCode((texto_Mayus.charCodeAt(i)+65-new-offset2)%26+65);
+    textoFinal2+= String.fromCharCode((texto_Mayus.charCodeAt(i)+65-newoffset1)%26+65);
   }}
   return textoFinal2;
 
